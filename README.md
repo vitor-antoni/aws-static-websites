@@ -12,6 +12,8 @@ To make the most of this documentation, has a few prerequisites that you should 
 
 If you have any questions or sugestions, feel free to make comments.
 
+<br>
+
 ## 🚀 Documentation Topics
 #### Bellow, you can see all topics addressed in this documentation.
 
@@ -21,6 +23,8 @@ If you have any questions or sugestions, feel free to make comments.
 - **S3 Bucket policy creation** <br>
 - **Upload archives to S3 Bucket** <br>
 - **Aditional configurations to CloudFront distribution** <br>
+
+<br>
 
 ## 1️⃣ S3 Bucket creation
 At first, we must create a S3 Bucket to host our website archieves. To achieve it, follow these steps bellow.<br>
@@ -91,9 +95,11 @@ At this momment, we are already abble to access this serverless website, but fir
 
 2. Access your website through CloudFront using distribution domain name.<br>
 <img width="688" height="232" alt="image" src="https://github.com/user-attachments/assets/555a53af-b724-4e65-ad6c-2eacb2ac5c0b" /><br><br>
-<img width="618" height="151" alt="image" src="https://github.com/user-attachments/assets/e8ac752b-dcdc-405a-9c94-ea37b8df4025" /><br><br>
 
-**IMPORTANT:** Note that are showed a "Access Denied" page. It occurs because `index.html` isn't being specifying in URL. So, let's specify it information and validate again if that works. In "Aditional configurations to CloudFront distribution" section has a way to work arround of this behavior.<br>
+3. Note that are showed a "Access Denied" page. It occurs because `index.html` isn't being specifying in URL. So, let's specify it information and validate again if that works. In "Aditional configurations to CloudFront distribution" section has a way to work arround of this behavior.<br>
+<img width="618" height="151" alt="image" src="https://github.com/user-attachments/assets/e8ac752b-dcdc-405a-9c94-ea37b8df4025" /><br><br><br>
+
+4. Access working with success.
 <img width="1134" height="611" alt="image" src="https://github.com/user-attachments/assets/5bf2b824-f5a2-4777-8e14-e37b545b7436" /><br><br><br>
 
 ## 6️⃣ Aditional configurations to CloudFront distribution
@@ -103,7 +109,9 @@ Will be listed bellow some configurations that can be used in addition to make y
 - You can configure error pages to your website at the CDN level. For it, specify a path and error page object located inside your S3 Bucket registered as origin, so distribution will search by path and object specified in this configuration to show this page to a user when some HTTP Error Code was returned.<br>
 - CloudFront Functions and Lambda@Edge Functions can be used to analyze and customize request and response events generated in CloudFront. I will create another documentation only for it.<br>
 
+<br>
+
 ## 📑 Additional informations
 
 This documentation was created to helps any person who want modernize your's website infrastructure.
-If I helped you any way, please follow/connect me in my LinkedIn to keep inside about others AWS services documentation: [LinkedIn](linkedin.com/in/vitor-silva-de-antoni/)
+If I helped you any way, please follow/connect me in my LinkedIn to keep inside about others AWS services documentation: [LinkedIn](https://www.linkedin.com/in/vitor-silva-de-antoni/)
