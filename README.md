@@ -56,12 +56,13 @@ After creating S3 Bucket, let's create a CloudFront distribution, that is, the C
 
 <br>
 
-3. Next page, specify S3 Bucket as a CloudFront origin. You can select recently created bucket by clicking on "Browse S3", but if the S3 Bucket was created in another AWS Account, no worries, just specify de Bucket Endpoint, as follow: _bucket-name_.s3._region_.amazonaws.com. **REMEMBER:** replate "bucket-name" by your bucket name and "region" by the region ID where the Bucket was created.<br>
+3. Next page, specify S3 Bucket as a CloudFront origin. You can select recently created bucket by clicking on "Browse S3", but if the S3 Bucket was created in another AWS Account, no worries, just specify de Bucket Endpoint, as follow: _bucket-name_.s3._region_.amazonaws.com.
+**REMEMBER:** replate "bucket-name" by your bucket name and "region" by the region ID where the Bucket was created.<br>
 <img width="1099" height="485" alt="image" src="https://github.com/user-attachments/assets/c5530f99-045f-4ef0-a6c6-15f350c0be2a" /><br><br><br>
 
-4. We won't add WAF (Web Application Firewall) in this tutorial.<br>
+5. We won't add WAF (Web Application Firewall) in this tutorial.<br>
 
-5. Review and create your CloudFront Distribution.<br><br><br>
+6. Review and create your CloudFront Distribution.<br><br><br>
 
 ## 3️⃣ CloudFront OAC creation
 Still in CloudFront console, let's create a OAC (Origin Access Control). It resource will allow our CloudFront distribution by accessing the S3 Bucket.<br>
