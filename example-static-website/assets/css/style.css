@@ -1,0 +1,105 @@
+/* assets/css/style.css */
+
+:root {
+    --navy-blue: #0a192f;
+    --light-slate: #ccd6f6;
+    --slate: #8892b0;
+    --box-bg: #112240;
+    --font-mono: 'Fira Code', monospace;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--navy-blue);
+    color: var(--slate);
+    font-family: var(--font-mono);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.main-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.central-box {
+    background-color: var(--box-bg);
+    padding: 3rem 4rem;
+    border-radius: 8px;
+    border: 1px solid #233554;
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    max-width: 800px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.central-box h1 {
+    color: var(--light-slate);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Styles specific to the error page */
+.error-box h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--light-slate);
+}
+
+.redirect-message {
+    font-size: 1rem;
+}
+
+#countdown {
+    font-weight: bold;
+    color: var(--light-slate);
+}
+
+footer {
+    padding: 20px;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .central-box {
+        padding: 2rem 1.5rem;
+    }
+    .central-box h1 {
+        font-size: 1.5rem;
+    }
+    .error-box h1 {
+        font-size: 2.5rem;
+    }
+}
