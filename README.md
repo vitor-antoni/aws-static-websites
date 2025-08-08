@@ -1,5 +1,5 @@
 # AWS Static Websites
-### Getting Start
+### ☁️ Getting Start
 Hi there, friends. How are you doing? Hope you're weell. 😁
 
 In this repository, I'd like to share my experience architecting a Static Website with AWS S3 Buckets and CloudFront CDN. Here, you'll find all the steps to set up a serverless environment to host a static website using AWS services.
